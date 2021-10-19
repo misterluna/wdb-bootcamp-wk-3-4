@@ -6,7 +6,7 @@ import { PrimaryButton } from "./PrimaryButton";
 
 // More on default export: https://storybook.js.org/docs/react/writing-stories/introduction#default-export
 export default {
-  title: "Example/Button",
+  title: "Example/PrimaryButton",
   component: PrimaryButton,
   // More on argTypes: https://storybook.js.org/docs/react/api/argtypes
   argTypes: {
@@ -22,11 +22,11 @@ const Template: ComponentStory<typeof PrimaryButton> = (args) => (
 export const Large = Template.bind({});
 Large.args = {
   size: "lg",
-  label: "Button",
+  label: "Primary",
 };
 
 export const Medium = Template.bind({});
 Medium.args = {
   size: "md",
-  label: "Button",
+  label: "Primary",
 };
