@@ -1,12 +1,12 @@
-import React from "react";
+import React from 'react';
 
-import { Button } from "@chakra-ui/react";
+import { Button } from '@chakra-ui/react';
 
 interface PrimaryButtonProps {
   /**
    * How large should the button be?
    */
-  size?: "md" | "lg";
+  size?: 'md' | 'lg';
   /**
    * Button contents
    */
@@ -31,9 +31,8 @@ export const PrimaryButton = ({
       size={size}
       variant="primary"
       colorScheme="orange.500"
-      className={["storybook-button", `storybook-button--${size}`].join(" ")}
-      {...props}
-    >
+      className={['storybook-button', `storybook-button--${size}`].join(' ')}
+      {...props}>
       {label}
     </Button>
   );

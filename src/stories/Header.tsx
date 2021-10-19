@@ -1,7 +1,7 @@
-import React from "react";
+import React from 'react';
 
-import { PrimaryButton } from "./PrimaryButton";
-import "./header.css";
+import { PrimaryButton } from './PrimaryButton';
+import './header.css';
 
 interface HeaderProps {
   user?: {};
@@ -23,8 +23,7 @@ export const Header = ({
           width="32"
           height="32"
           viewBox="0 0 32 32"
-          xmlns="http://www.w3.org/2000/svg"
-        >
+          xmlns="http://www.w3.org/2000/svg">
           <g fill="none" fillRule="evenodd">
             <path
               d="M10 0h12a10 10 0 0110 10v12a10 10 0 01-10 10H10A10 10 0 010 22V10A10 10 0 0110 0z"
@@ -44,13 +43,12 @@ export const Header = ({
       </div>
       <div>
         {user ? (
-          <PrimaryButton size="small" onClick={onLogout} label="Log out" />
+          <PrimaryButton size="md" onClick={onLogout} label="Log out" />
         ) : (
           <>
-            <PrimaryButton size="small" onClick={onLogin} label="Log in" />
+            <PrimaryButton size="md" onClick={onLogin} label="Log in" />
             <PrimaryButton
-              primary
-              size="small"
+              size="md"
               onClick={onCreateAccount}
               label="Sign up"
             />

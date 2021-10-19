@@ -1,10 +1,12 @@
-import { ChakraProvider } from "@chakra-ui/react";
-import * as React from "react";
-import ReactDOM from "react-dom";
-import { App } from "./App";
-import reportWebVitals from "./reportWebVitals";
-import * as serviceWorker from "./serviceWorker";
-import theme from "./theme";
+import * as React from 'react';
+
+import { ChakraProvider } from '@chakra-ui/react';
+import ReactDOM from 'react-dom';
+
+import { App } from './App';
+import reportWebVitals from './reportWebVitals';
+import * as serviceWorker from './serviceWorker';
+import theme from './theme';
 
 ReactDOM.render(
   <React.StrictMode>
@@ -12,7 +14,7 @@ ReactDOM.render(
       <App />
     </ChakraProvider>
   </React.StrictMode>,
-  document.getElementById("root")
+  document.getElementById('root'),
 );
 
 // If you want your app to work offline and load faster, you can change
