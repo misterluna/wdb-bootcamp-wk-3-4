@@ -29,7 +29,7 @@ export const PrimaryButton = ({
     <Button
       type="button"
       size={size}
-      variant="secondary"
+      variant="primary"
       colorScheme="orange.500"
       className={["storybook-button", `storybook-button--${size}`].join(" ")}
       {...props}

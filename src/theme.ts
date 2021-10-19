@@ -121,43 +121,22 @@ const overrides = {
       },
       sizes: {
         md: {
-          px: 7,
-          h: "60px",
-          fontSize: "25px",
+          w: "179px",
+          h: "36px",
+          fontSize: "h5",
+          borderRadius: "6px",
         },
         lg: {
-          px: 1000,
-          h: "70px",
-          fontSize: "30px",
-          borderRadius: "10px",
+          w: "224px",
+          h: "36px",
+          fontSize: "h5",
+          borderRadius: "6px",
         },
       },
       variants: {
         primary: {
           bg: "orange.500",
-          color: "#000",
-        },
-        secondary: {
-          bg: "orange.500",
-          color: "#000",
-        },
-        ghost: {
-          bg: "transparent",
-          border: "1px solid red",
-        },
-        primaryGhost: {
-          bg: "transparent",
-          border: "1px solid",
-          borderColor: "primary",
-        },
-        secondaryGhost: {
-          bg: "transparent",
-          border: "1px solid",
-          borderColor: "secondary",
-          _hover: {
-            color: "#fff",
-            bg: "#BB1415",
-          },
+          color: "#FFF",
         },
       },
     },
