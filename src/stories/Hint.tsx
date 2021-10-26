@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Box, Button, Icon } from '@chakra-ui/react';
+import { Box, Button, Icon, HStack, Text } from '@chakra-ui/react';
 import { HiLightBulb } from 'react-icons/hi';
 
 interface HintProps {
@@ -8,6 +8,7 @@ interface HintProps {
    * Button contents
    */
   size?: 'full' | 'icon';
+  labelColor?: 'black' | 'orange';
   /**
    * Optional click handler
    */
@@ -17,14 +18,14 @@ interface HintProps {
 /**
  * Primary UI component for user interaction
  */
-export const Hint = ({ size, ...props }: HintProps) => {
+export const Hint = ({ size, labelColor, ...props }: HintProps) => {
   const icon = (
     <Button
       type="button"
       variant="hintIcon"
       className={['storybook-button', `storybook-button-hint`].join(' ')}
       {...props}>
-      <Icon as={HiLightBulb} style={{ fontSize: '30px' }} />
+      <Icon as={HiLightBulb} style={{ fontSize: '30px', color: 'white' }} />
     </Button>
   );
 
@@ -35,8 +36,15 @@ export const Hint = ({ size, ...props }: HintProps) => {
       backgroundColor="#FFF0E6"
       borderRadius="48px"
       {...props}>
-      {icon}
-      Get Hint
+      <HStack w="155px">
+        {icon}
+        <Text
+          paddingLeft="16px"
+          color={labelColor === 'orange' ? 'orange.500' : 'black'}
+          fontWeight="400">
+          Get Hint
+        </Text>
+      </HStack>
     </Box>
   );
 

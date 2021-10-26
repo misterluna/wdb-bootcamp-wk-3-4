@@ -144,10 +144,8 @@ const overrides = {
           w: '48px',
           h: '48px',
           borderRadius: '48px',
-        },
-        hintFull: {
-          bg: 'orange.500',
-          color: '#FFF',
+          webkitBoxShadow: '1px 3px 5px rgba(148, 148, 148, 0.25)',
+          boxShadow: '1px 3px 5px rgba(148, 148, 148, 0.25)',
         },
       },
     },
