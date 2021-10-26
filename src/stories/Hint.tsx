@@ -7,6 +7,7 @@ interface HintProps {
   /**
    * Button contents
    */
+  label?: string;
   size?: 'full' | 'icon';
   labelColor?: 'black' | 'orange';
   /**
@@ -18,7 +19,7 @@ interface HintProps {
 /**
  * Primary UI component for user interaction
  */
-export const Hint = ({ size, labelColor, ...props }: HintProps) => {
+export const Hint = ({ label, size, labelColor, ...props }: HintProps) => {
   const icon = (
     <Button
       type="button"
@@ -42,7 +43,7 @@ export const Hint = ({ size, labelColor, ...props }: HintProps) => {
           paddingLeft="13px"
           color={labelColor === 'orange' ? 'orange.500' : 'black'}
           fontWeight="400">
-          Get Hint
+          {label}
         </Text>
       </HStack>
     </Box>

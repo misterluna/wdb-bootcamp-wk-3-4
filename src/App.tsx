@@ -8,7 +8,7 @@ import { PrimaryButton } from './stories/PrimaryButton';
 export const App = () => {
   return (
     <>
-      <Hint size="full" labelColor="black" />
+      <Tag variant="tagXl" />
     </>
   );
 };
