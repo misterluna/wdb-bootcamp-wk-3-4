@@ -4,11 +4,12 @@ import { Button } from '@chakra-ui/button';
 
 import { Hint } from './stories/Hint';
 import { PrimaryButton } from './stories/PrimaryButton';
+import { Tag } from './stories/Tag';
 
 export const App = () => {
   return (
     <>
-      <Tag variant="tagXl" />
+      <Tag type="icon" />
     </>
   );
 };
