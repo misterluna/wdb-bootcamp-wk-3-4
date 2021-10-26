@@ -39,7 +39,7 @@ export const Hint = ({ size, labelColor, ...props }: HintProps) => {
       <HStack w="155px">
         {icon}
         <Text
-          paddingLeft="16px"
+          paddingLeft="13px"
           color={labelColor === 'orange' ? 'orange.500' : 'black'}
           fontWeight="400">
           Get Hint
