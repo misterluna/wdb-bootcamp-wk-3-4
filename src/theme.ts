@@ -1,4 +1,4 @@
-import { extendTheme } from '@chakra-ui/react';
+import { extendTheme, Box } from '@chakra-ui/react';
 import '@fontsource/rubik';
 
 const overrides = {
@@ -115,6 +115,16 @@ const overrides = {
   },
 
   components: {
+    Box: {
+      baseStyle: {
+        borderRadius: 'none',
+      },
+      variants: {
+        milestoneCard: {
+          bg: 'primary.orange',
+        },
+      },
+    },
     Button: {
       baseStyle: {
         borderRadius: 'none',

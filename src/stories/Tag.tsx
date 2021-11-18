@@ -46,6 +46,7 @@ export const Tag = ({ iconType, label, variant, type, ...props }: TagProps) => {
     <Button
       w="155px"
       variant={variant === 'tagXl' || variant === 'tagLg' ? variant : 'tagXl'}
+      boxShadow="1px 2px 4px rgba(213, 213, 213, 0.25);"
       {...props}>
       <HStack w="155px">
         {icon(variant === 'tagXl' ? 'cube' : 'pen')}

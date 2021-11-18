@@ -34,6 +34,7 @@ export const Hint = ({ label, size, labelColor, ...props }: HintProps) => {
     <Box
       className={['storybook-hint', `storybook-button-hint`].join(' ')}
       w="155px"
+      h="48px"
       backgroundColor="#FFF0E6"
       borderRadius="48px"
       {...props}>
@@ -43,7 +44,7 @@ export const Hint = ({ label, size, labelColor, ...props }: HintProps) => {
           paddingLeft="13px"
           color={labelColor === 'orange' ? 'orange.500' : 'black'}
           fontWeight="400">
-          {label}
+          {label || 'Get Hint'}
         </Text>
       </HStack>
     </Box>
